@@ -12,7 +12,7 @@ namespace BlobFunctionAppTest.Handlers
     {
         public Task ExecuteAsync(HelloWorldCommand command)
         {
-            Debug.WriteLine($"Hello {command.UserName}");
+            Console.WriteLine($"Hello {command.UserName}");
             return Task.CompletedTask;
         }
     }
